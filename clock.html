@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock</title>
     <style>
         body {
@@ -14,25 +17,33 @@
         }
 
         .clock-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .block {
             background-color: #444;
+            color: #61dafb;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        #clock {
-            font-size: 3em;
-            color: #61dafb;
+            font-size: 4em;
             text-align: center;
+            width: 120px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 
 <body>
     <div class="clock-container">
-        <div id="clock"></div>
+        <div class="block" id="hours"></div>
+        <div class="block" id="minutes"></div>
+        <div class="block" id="seconds"></div>
     </div>
-
 </body>
 
 </html>
